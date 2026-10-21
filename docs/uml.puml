@@ -1,0 +1,78 @@
+@startuml
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam backgroundColor white
+skinparam ArrowColor #333333
+skinparam class {
+  BackgroundColor #FFFFFF
+  BorderColor #333333
+}
+skinparam interface {
+  BackgroundColor #E8F0FE
+  BorderColor #333333
+}
+hide empty members
+left to right direction
+
+enum ExamType
+
+package reaction {
+  interface ReactStrategy {
+    +react(roomId: String): String
+  }
+  class WarnStrategy
+  class PauseStrategy
+  class TerminateStrategy
+  class ViolationHandler {
+    +setStrategy(ReactStrategy)
+    +handle(roomId: String): String
+  }
+  class ReactSelector {
+    +select(violationNumber: int, ExamType): ReactStrategy
+  }
+}
+
+package ordering {
+  interface OrderStrategy {
+    +order(List<Question>): List<Question>
+  }
+  class InOrderStrategy
+  class ShuffledStrategy
+  class EasyFirstStrategy
+  class QuestionOrderer {
+    +setStrategy(OrderStrategy)
+    +arrange(List<Question>): List<Question>
+  }
+  class OrderSelector {
+    +select(ExamType): OrderStrategy
+  }
+  class Question <<record>> {
+    text: String
+    difficulty: int
+  }
+}
+
+package sensor {
+  interface NoiseSensor {
+    +levelDb(roomId: String): int
+  }
+  class SimulatedNoiseSensor
+}
+
+ReactStrategy <|.. WarnStrategy
+ReactStrategy <|.. PauseStrategy
+ReactStrategy <|.. TerminateStrategy
+ViolationHandler o-- ReactStrategy
+ReactSelector ..> ReactStrategy : creates
+ReactSelector ..> ExamType
+
+OrderStrategy <|.. InOrderStrategy
+OrderStrategy <|.. ShuffledStrategy
+OrderStrategy <|.. EasyFirstStrategy
+QuestionOrderer o-- OrderStrategy
+OrderSelector ..> OrderStrategy : creates
+OrderSelector ..> ExamType
+OrderStrategy ..> Question
+
+NoiseSensor <|.. SimulatedNoiseSensor
+@enduml

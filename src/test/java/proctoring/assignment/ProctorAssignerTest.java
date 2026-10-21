@@ -3,6 +3,7 @@ package proctoring.assignment;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.List;
 import org.junit.jupiter.api.Test;
@@ -54,7 +55,7 @@ class ProctorAssignerTest {
     List<Proctor> input = List.of(ann, bob, cid);
     Proctor result = Assigners.create(name).assign(input);
     assertNotNull(result);
-    assertEquals(true, input.contains(result));
+    assertTrue(input.contains(result));
     assertEquals(List.of(ann, bob, cid), input);
   }
 

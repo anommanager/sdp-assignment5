@@ -14,50 +14,52 @@ skinparam interface {
 hide empty members
 left to right direction
 
-enum ExamType
-
-package reaction {
-  interface ReactStrategy {
-    +react(roomId: String): String
-  }
-  class WarnStrategy
-  class PauseStrategy
-  class TerminateStrategy
-  class ViolationHandler {
-    +setStrategy(ReactStrategy)
-    +handle(roomId: String): String
-  }
-  class ReactSelector {
-    +select(violationNumber: int, ExamType): ReactStrategy
-  }
+enum ExamType {
+  FINAL
+  PRACTICE
+  QUIZ
 }
 
-package ordering {
-  interface OrderStrategy {
-    +order(List<Question>): List<Question>
-  }
-  class InOrderStrategy
-  class ShuffledStrategy
-  class EasyFirstStrategy
-  class QuestionOrderer {
-    +setStrategy(OrderStrategy)
-    +arrange(List<Question>): List<Question>
-  }
-  class OrderSelector {
-    +select(ExamType): OrderStrategy
-  }
-  class Question <<record>> {
-    text: String
-    difficulty: int
-  }
+interface ReactStrategy {
+  +react(roomId: String): String
+}
+class WarnStrategy
+class PauseStrategy
+class TerminateStrategy
+class ViolationHandler {
+  -strategy: ReactStrategy
+  +setStrategy(ReactStrategy)
+  +handle(roomId: String): String
+}
+class ReactSelector {
+  +select(violationNumber: int, ExamType): ReactStrategy
 }
 
-package sensor {
-  interface NoiseSensor {
-    +levelDb(roomId: String): int
-  }
-  class SimulatedNoiseSensor
+interface OrderStrategy {
+  +order(List<Question>): List<Question>
 }
+class InOrderStrategy
+class ShuffledStrategy {
+  -random: Random
+}
+class EasyFirstStrategy
+class QuestionOrderer {
+  -strategy: OrderStrategy
+  +setStrategy(OrderStrategy)
+  +arrange(List<Question>): List<Question>
+}
+class OrderSelector {
+  +select(ExamType): OrderStrategy
+}
+class Question <<record>> {
+  text: String
+  difficulty: int
+}
+
+interface NoiseSensor {
+  +levelDb(roomId: String): int
+}
+class SimulatedNoiseSensor
 
 ReactStrategy <|.. WarnStrategy
 ReactStrategy <|.. PauseStrategy

@@ -6,8 +6,7 @@ The program checks online exams. Two jobs can be done in different ways, so each
 - **Question order**: as in the bank, shuffled, easy first.
 
 ## UML
-
-See `docs/uml.puml`.
+![diagram](docs/uml.svg)
 
 ## Classes
 

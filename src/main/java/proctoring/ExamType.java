@@ -1,5 +1,5 @@
 package proctoring;
 
 public enum ExamType {
-    FINAL, PRACTICE, QUIZ
+  FINAL, PRACTICE, QUIZ
 }

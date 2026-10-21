@@ -1,5 +1,5 @@
 package proctoring.sensor;
 
 public interface NoiseSensor {
-    int levelDb(String roomId);
+  int levelDb(String roomId);
 }

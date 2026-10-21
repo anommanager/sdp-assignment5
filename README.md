@@ -46,8 +46,8 @@ Strategy also keeps the decision code in one place. The only `if` and `switch` l
 
 The proctor assignment family was first written as one class with a `switch` over a mode name, then moved to Strategy. The same `ProctorAssignerTest` passes on both versions; only the small test helper `Assigners` changed, because the constructor differs.
 
-- Before (switch in one class): [416ec18c047851447191facf3e4814b799263c0c](https://github.com/anommanager/sdp-assignment5/commit/416ec18c047851447191facf3e4814b799263c0c)
-- After (Strategy): [ed729ad3dd2e7d8800ed19d423e53cc511c5469b](https://github.com/anommanager/sdp-assignment5/commit/ed729ad3dd2e7d8800ed19d423e53cc511c5469b)
+- Before (switch in one class): [ba9cc4cd9a71c0d6e9908ba5e2ea3d85f2cc5e37](https://github.com/anommanager/sdp-assignment5/commit/ba9cc4cd9a71c0d6e9908ba5e2ea3d85f2cc5e37)
+- After (Strategy): [f976b24dc2d42e62b9f12371c04fbadf277b8c1d](https://github.com/anommanager/sdp-assignment5/commit/f976b24dc2d42e62b9f12371c04fbadf277b8c1d)
 
 ## Run
 

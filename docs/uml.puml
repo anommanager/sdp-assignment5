@@ -23,9 +23,23 @@ enum ExamType {
 interface ReactStrategy {
   +react(roomId: String): String
 }
-class WarnStrategy
-class PauseStrategy
-class TerminateStrategy
+class WarnStrategy {
+  -log: IncidentLog
+}
+class PauseStrategy {
+  -log: IncidentLog
+  -clock: Clock
+  -seconds: int
+}
+class TerminateStrategy {
+  -log: IncidentLog
+}
+class NoiseBasedReaction {
+  -sensor: NoiseSensor
+  -quiet: ReactStrategy
+  -medium: ReactStrategy
+  -loud: ReactStrategy
+}
 class ViolationHandler {
   -strategy: ReactStrategy
   +setStrategy(ReactStrategy)
@@ -34,26 +48,31 @@ class ViolationHandler {
 class ReactSelector {
   +select(violationNumber: int, ExamType): ReactStrategy
 }
+class IncidentLog {
+  +add(entry: String)
+  +entries(): List<String>
+}
 
-interface OrderStrategy {
-  +order(List<Question>): List<Question>
+interface ProctorStrategy {
+  +pick(List<Proctor>): Proctor
 }
-class InOrderStrategy
-class ShuffledStrategy {
-  -random: Random
+class LeastLoadedStrategy
+class BestRatedStrategy
+class RoundRobinStrategy {
+  -next: int
 }
-class EasyFirstStrategy
-class QuestionOrderer {
-  -strategy: OrderStrategy
-  +setStrategy(OrderStrategy)
-  +arrange(List<Question>): List<Question>
+class ProctorAssigner {
+  -strategy: ProctorStrategy
+  +setStrategy(ProctorStrategy)
+  +assign(List<Proctor>): Proctor
 }
-class OrderSelector {
-  +select(ExamType): OrderStrategy
+class ProctorSelector {
+  +select(ExamType, students: int): ProctorStrategy
 }
-class Question <<record>> {
-  text: String
-  difficulty: int
+class Proctor <<record>> {
+  name: String
+  activeRooms: int
+  rating: double
 }
 
 interface NoiseSensor {
@@ -64,17 +83,24 @@ class SimulatedNoiseSensor
 ReactStrategy <|.. WarnStrategy
 ReactStrategy <|.. PauseStrategy
 ReactStrategy <|.. TerminateStrategy
+ReactStrategy <|.. NoiseBasedReaction
 ViolationHandler o-- ReactStrategy
+NoiseBasedReaction o-- ReactStrategy
+NoiseBasedReaction --> NoiseSensor
+WarnStrategy --> IncidentLog
+PauseStrategy --> IncidentLog
+TerminateStrategy --> IncidentLog
 ReactSelector ..> ReactStrategy : creates
 ReactSelector ..> ExamType
+ReactSelector --> NoiseSensor
 
-OrderStrategy <|.. InOrderStrategy
-OrderStrategy <|.. ShuffledStrategy
-OrderStrategy <|.. EasyFirstStrategy
-QuestionOrderer o-- OrderStrategy
-OrderSelector ..> OrderStrategy : creates
-OrderSelector ..> ExamType
-OrderStrategy ..> Question
+ProctorStrategy <|.. LeastLoadedStrategy
+ProctorStrategy <|.. BestRatedStrategy
+ProctorStrategy <|.. RoundRobinStrategy
+ProctorAssigner o-- ProctorStrategy
+ProctorSelector ..> ProctorStrategy : creates
+ProctorSelector ..> ExamType
+ProctorStrategy ..> Proctor
 
 NoiseSensor <|.. SimulatedNoiseSensor
 @enduml

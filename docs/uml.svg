@@ -1,1 +1,298 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" data-diagram-type="CLASS" style="width:1004px;height:621px;background:#FFFFFF;" width="1004px" height="621px" viewBox="0 0 1004 621" zoomAndPan="magnify" preserveAspectRatio="none" contentStyleType="text/css"><?plantuml 1.2026.9?><defs/><g font-family="sans-serif" lengthAdjust="spacing"><!--class ExamType--><g class="entity" data-qualified-name="ExamType" id="ent0001" data-source-line="16"><rect x="584.5" y="291" width="101.822" height="90.818" fill="#FFF" style="stroke:#333;stroke-width:0.5;" rx="2.5" ry="2.5"/><ellipse cx="599.5" cy="307" rx="11" ry="11" fill="#EB937F" style="stroke:#181818;stroke-width:1;"/><path d="M603.609,313 L595.891,313 L595.891,300.609 L603.609,300.609 L603.609,302.766 L598.344,302.766 L598.344,305.438 L603.109,305.438 L603.109,307.594 L598.344,307.594 L598.344,310.844 L603.609,310.844 L603.609,313 Z " fill="#000"/><text x="613.5" y="312.093" fill="#000" font-size="14" textLength="69.822">ExamType</text><line x1="585.5" y1="323" x2="685.322" y2="323" style="stroke:#333;stroke-width:0.5;"/><text x="590.5" y="340.563" fill="#000" font-size="14" textLength="40.147">FINAL</text><text x="590.5" y="357.502" fill="#000" font-size="14" textLength="69.275">PRACTICE</text><text x="590.5" y="374.441" fill="#000" font-size="14" textLength="33.688">QUIZ</text></g><!--class ReactStrategy--><g class="entity" data-qualified-name="ReactStrategy" id="ent0002" data-source-line="22"><rect x="532.5" y="143" width="206.106" height="56.939" fill="#FFF" style="stroke:#333;stroke-width:0.5;" rx="2.5" ry="2.5"/><ellipse cx="583.903" cy="159" rx="11" ry="11" fill="#B4A7E5" style="stroke:#181818;stroke-width:1;"/><path d="M579.825,154.766 L579.825,152.609 L587.215,152.609 L587.215,154.766 L584.747,154.766 L584.747,162.844 L587.215,162.844 L587.215,165 L579.825,165 L579.825,162.844 L582.293,162.844 L582.293,154.766 L579.825,154.766 Z " fill="#000"/><text x="604.403" y="164.093" fill="#000" font-size="14" textLength="94.801" font-style="italic">ReactStrategy</text><line x1="533.5" y1="175" x2="737.606" y2="175" style="stroke:#333;stroke-width:0.5;"/><text x="538.5" y="192.563" fill="#000" font-size="14" textLength="194.106">+react(roomId: String): String</text></g><!--class WarnStrategy--><g class="entity" data-qualified-name="WarnStrategy" id="ent0003" data-source-line="25"><rect x="851" y="155.5" width="123.089" height="32" fill="#FFF" style="stroke:#333;stroke-width:0.5;" rx="2.5" ry="2.5"/><ellipse cx="866" cy="171.5" rx="11" ry="11" fill="#ADD1B2" style="stroke:#181818;stroke-width:1;"/><path d="M868.969,177.141 Q868.391,177.438 867.75,177.578 Q867.109,177.734 866.406,177.734 Q863.906,177.734 862.578,176.094 Q861.266,174.438 861.266,171.313 Q861.266,168.188 862.578,166.531 Q863.906,164.875 866.406,164.875 Q867.109,164.875 867.75,165.031 Q868.406,165.188 868.969,165.484 L868.969,168.203 Q868.344,167.625 867.75,167.359 Q867.156,167.078 866.531,167.078 Q865.188,167.078 864.5,168.156 Q863.813,169.219 863.813,171.313 Q863.813,173.406 864.5,174.484 Q865.188,175.547 866.531,175.547 Q867.156,175.547 867.75,175.281 Q868.344,175 868.969,174.422 L868.969,177.141 Z " fill="#000"/><text x="880" y="176.593" fill="#000" font-size="14" textLength="91.089">WarnStrategy</text></g><!--class PauseStrategy--><g class="entity" data-qualified-name="PauseStrategy" id="ent0004" data-source-line="26"><rect x="848" y="222.5" width="128.523" height="32" fill="#FFF" style="stroke:#333;stroke-width:0.5;" rx="2.5" ry="2.5"/><ellipse cx="863" cy="238.5" rx="11" ry="11" fill="#ADD1B2" style="stroke:#181818;stroke-width:1;"/><path d="M865.969,244.141 Q865.391,244.438 864.75,244.578 Q864.109,244.734 863.406,244.734 Q860.906,244.734 859.578,243.094 Q858.266,241.438 858.266,238.313 Q858.266,235.188 859.578,233.531 Q860.906,231.875 863.406,231.875 Q864.109,231.875 864.75,232.031 Q865.406,232.188 865.969,232.484 L865.969,235.203 Q865.344,234.625 864.75,234.359 Q864.156,234.078 863.531,234.078 Q862.188,234.078 861.5,235.156 Q860.813,236.219 860.813,238.313 Q860.813,240.406 861.5,241.484 Q862.188,242.547 863.531,242.547 Q864.156,242.547 864.75,242.281 Q865.344,242 865.969,241.422 L865.969,244.141 Z " fill="#000"/><text x="877" y="243.593" fill="#000" font-size="14" textLength="96.523">PauseStrategy</text></g><!--class TerminateStrategy--><g class="entity" data-qualified-name="TerminateStrategy" id="ent0005" data-source-line="27"><rect x="835" y="88.5" width="154.89" height="32" fill="#FFF" style="stroke:#333;stroke-width:0.5;" rx="2.5" ry="2.5"/><ellipse cx="850" cy="104.5" rx="11" ry="11" fill="#ADD1B2" style="stroke:#181818;stroke-width:1;"/><path d="M852.969,110.141 Q852.391,110.438 851.75,110.578 Q851.109,110.734 850.406,110.734 Q847.906,110.734 846.578,109.094 Q845.266,107.438 845.266,104.313 Q845.266,101.188 846.578,99.531 Q847.906,97.875 850.406,97.875 Q851.109,97.875 851.75,98.031 Q852.406,98.188 852.969,98.484 L852.969,101.203 Q852.344,100.625 851.75,100.359 Q851.156,100.078 850.531,100.078 Q849.188,100.078 848.5,101.156 Q847.813,102.219 847.813,104.313 Q847.813,106.406 848.5,107.484 Q849.188,108.547 850.531,108.547 Q851.156,108.547 851.75,108.281 Q852.344,108 852.969,107.422 L852.969,110.141 Z " fill="#000"/><text x="864" y="109.593" fill="#000" font-size="14" textLength="122.89">TerminateStrategy</text></g><!--class ViolationHandler--><g class="entity" data-qualified-name="ViolationHandler" id="ent0006" data-source-line="28"><rect x="90" y="99" width="216.771" height="98.818" fill="#FFF" style="stroke:#333;stroke-width:0.5;" rx="2.5" ry="2.5"/><ellipse cx="139.502" cy="115" rx="11" ry="11" fill="#ADD1B2" style="stroke:#181818;stroke-width:1;"/><path d="M142.471,120.641 Q141.893,120.938 141.252,121.078 Q140.612,121.234 139.909,121.234 Q137.409,121.234 136.081,119.594 Q134.768,117.938 134.768,114.813 Q134.768,111.688 136.081,110.031 Q137.409,108.375 139.909,108.375 Q140.612,108.375 141.252,108.531 Q141.909,108.688 142.471,108.984 L142.471,111.703 Q141.846,111.125 141.252,110.859 Q140.659,110.578 140.034,110.578 Q138.69,110.578 138.002,111.656 Q137.315,112.719 137.315,114.813 Q137.315,116.906 138.002,117.984 Q138.69,119.047 140.034,119.047 Q140.659,119.047 141.252,118.781 Q141.846,118.5 142.471,117.922 L142.471,120.641 Z " fill="#000"/><text x="160.002" y="120.093" fill="#000" font-size="14" textLength="109.266">ViolationHandler</text><line x1="91" y1="131" x2="305.771" y2="131" style="stroke:#333;stroke-width:0.5;"/><text x="96" y="148.563" fill="#000" font-size="14" textLength="162.21">-strategy: ReactStrategy</text><line x1="91" y1="155.939" x2="305.771" y2="155.939" style="stroke:#333;stroke-width:0.5;"/><text x="96" y="173.502" fill="#000" font-size="14" textLength="189">+setStrategy(ReactStrategy)</text><text x="96" y="190.441" fill="#000" font-size="14" textLength="204.771">+handle(roomId: String): String</text></g><!--class ReactSelector--><g class="entity" data-qualified-name="ReactSelector" id="ent0007" data-source-line="33"><rect x="7" y="233" width="383.273" height="56.939" fill="#FFF" style="stroke:#333;stroke-width:0.5;" rx="2.5" ry="2.5"/><ellipse cx="148.111" cy="249" rx="11" ry="11" fill="#ADD1B2" style="stroke:#181818;stroke-width:1;"/><path d="M151.08,254.641 Q150.501,254.938 149.861,255.078 Q149.22,255.234 148.517,255.234 Q146.017,255.234 144.689,253.594 Q143.376,251.938 143.376,248.813 Q143.376,245.688 144.689,244.031 Q146.017,242.375 148.517,242.375 Q149.22,242.375 149.861,242.531 Q150.517,242.688 151.08,242.984 L151.08,245.703 Q150.455,245.125 149.861,244.859 Q149.267,244.578 148.642,244.578 Q147.298,244.578 146.611,245.656 Q145.923,246.719 145.923,248.813 Q145.923,250.906 146.611,251.984 Q147.298,253.047 148.642,253.047 Q149.267,253.047 149.861,252.781 Q150.455,252.5 151.08,251.922 L151.08,254.641 Z " fill="#000"/><text x="168.611" y="254.093" fill="#000" font-size="14" textLength="92.552">ReactSelector</text><line x1="8" y1="265" x2="389.273" y2="265" style="stroke:#333;stroke-width:0.5;"/><text x="13" y="282.563" fill="#000" font-size="14" textLength="371.273">+select(violationNumber: int, ExamType): ReactStrategy</text></g><!--class OrderStrategy--><g class="entity" data-qualified-name="OrderStrategy" id="ent0008" data-source-line="37"><rect x="497" y="419" width="277.063" height="56.939" fill="#FFF" style="stroke:#333;stroke-width:0.5;" rx="2.5" ry="2.5"/><ellipse cx="584.063" cy="435" rx="11" ry="11" fill="#B4A7E5" style="stroke:#181818;stroke-width:1;"/><path d="M579.984,430.766 L579.984,428.609 L587.375,428.609 L587.375,430.766 L584.906,430.766 L584.906,438.844 L587.375,438.844 L587.375,441 L579.984,441 L579.984,438.844 L582.453,438.844 L582.453,430.766 L579.984,430.766 Z " fill="#000"/><text x="604.563" y="440.093" fill="#000" font-size="14" textLength="94.438" font-style="italic">OrderStrategy</text><line x1="498" y1="451" x2="773.063" y2="451" style="stroke:#333;stroke-width:0.5;"/><text x="503" y="468.563" fill="#000" font-size="14" textLength="265.063">+order(List&lt;Question>): List&lt;Question></text></g><!--class InOrderStrategy--><g class="entity" data-qualified-name="InOrderStrategy" id="ent0009" data-source-line="40"><rect x="843.5" y="574.5" width="137.902" height="32" fill="#FFF" style="stroke:#333;stroke-width:0.5;" rx="2.5" ry="2.5"/><ellipse cx="858.5" cy="590.5" rx="11" ry="11" fill="#ADD1B2" style="stroke:#181818;stroke-width:1;"/><path d="M861.469,596.141 Q860.891,596.438 860.25,596.578 Q859.609,596.734 858.906,596.734 Q856.406,596.734 855.078,595.094 Q853.766,593.438 853.766,590.313 Q853.766,587.188 855.078,585.531 Q856.406,583.875 858.906,583.875 Q859.609,583.875 860.25,584.031 Q860.906,584.188 861.469,584.484 L861.469,587.203 Q860.844,586.625 860.25,586.359 Q859.656,586.078 859.031,586.078 Q857.688,586.078 857,587.156 Q856.313,588.219 856.313,590.313 Q856.313,592.406 857,593.484 Q857.688,594.547 859.031,594.547 Q859.656,594.547 860.25,594.281 Q860.844,594 861.469,593.422 L861.469,596.141 Z " fill="#000"/><text x="872.5" y="595.593" fill="#000" font-size="14" textLength="105.902">InOrderStrategy</text></g><!--class ShuffledStrategy--><g class="entity" data-qualified-name="ShuffledStrategy" id="ent0010" data-source-line="41"><rect x="840.5" y="296" width="143.918" height="56.939" fill="#FFF" style="stroke:#333;stroke-width:0.5;" rx="2.5" ry="2.5"/><ellipse cx="855.5" cy="312" rx="11" ry="11" fill="#ADD1B2" style="stroke:#181818;stroke-width:1;"/><path d="M858.469,317.641 Q857.891,317.938 857.25,318.078 Q856.609,318.234 855.906,318.234 Q853.406,318.234 852.078,316.594 Q850.766,314.938 850.766,311.813 Q850.766,308.688 852.078,307.031 Q853.406,305.375 855.906,305.375 Q856.609,305.375 857.25,305.531 Q857.906,305.688 858.469,305.984 L858.469,308.703 Q857.844,308.125 857.25,307.859 Q856.656,307.578 856.031,307.578 Q854.688,307.578 854,308.656 Q853.313,309.719 853.313,311.813 Q853.313,313.906 854,314.984 Q854.688,316.047 856.031,316.047 Q856.656,316.047 857.25,315.781 Q857.844,315.5 858.469,314.922 L858.469,317.641 Z " fill="#000"/><text x="869.5" y="317.093" fill="#000" font-size="14" textLength="111.918">ShuffledStrategy</text><line x1="841.5" y1="328" x2="983.418" y2="328" style="stroke:#333;stroke-width:0.5;"/><text x="846.5" y="345.563" fill="#000" font-size="14" textLength="119.417">-random: Random</text></g><!--class EasyFirstStrategy--><g class="entity" data-qualified-name="EasyFirstStrategy" id="ent0011" data-source-line="44"><rect x="838.5" y="388.5" width="148.32" height="32" fill="#FFF" style="stroke:#333;stroke-width:0.5;" rx="2.5" ry="2.5"/><ellipse cx="853.5" cy="404.5" rx="11" ry="11" fill="#ADD1B2" style="stroke:#181818;stroke-width:1;"/><path d="M856.469,410.141 Q855.891,410.438 855.25,410.578 Q854.609,410.734 853.906,410.734 Q851.406,410.734 850.078,409.094 Q848.766,407.438 848.766,404.313 Q848.766,401.188 850.078,399.531 Q851.406,397.875 853.906,397.875 Q854.609,397.875 855.25,398.031 Q855.906,398.188 856.469,398.484 L856.469,401.203 Q855.844,400.625 855.25,400.359 Q854.656,400.078 854.031,400.078 Q852.688,400.078 852,401.156 Q851.313,402.219 851.313,404.313 Q851.313,406.406 852,407.484 Q852.688,408.547 854.031,408.547 Q854.656,408.547 855.25,408.281 Q855.844,408 856.469,407.422 L856.469,410.141 Z " fill="#000"/><text x="867.5" y="409.593" fill="#000" font-size="14" textLength="116.32">EasyFirstStrategy</text></g><!--class QuestionOrderer--><g class="entity" data-qualified-name="QuestionOrderer" id="ent0012" data-source-line="45"><rect x="52" y="417" width="292.677" height="98.818" fill="#FFF" style="stroke:#333;stroke-width:0.5;" rx="2.5" ry="2.5"/><ellipse cx="138.796" cy="433" rx="11" ry="11" fill="#ADD1B2" style="stroke:#181818;stroke-width:1;"/><path d="M141.765,438.641 Q141.187,438.938 140.546,439.078 Q139.905,439.234 139.202,439.234 Q136.702,439.234 135.374,437.594 Q134.062,435.938 134.062,432.813 Q134.062,429.688 135.374,428.031 Q136.702,426.375 139.202,426.375 Q139.905,426.375 140.546,426.531 Q141.202,426.688 141.765,426.984 L141.765,429.703 Q141.14,429.125 140.546,428.859 Q139.952,428.578 139.327,428.578 Q137.983,428.578 137.296,429.656 Q136.608,430.719 136.608,432.813 Q136.608,434.906 137.296,435.984 Q137.983,437.047 139.327,437.047 Q139.952,437.047 140.546,436.781 Q141.14,436.5 141.765,435.922 L141.765,438.641 Z " fill="#000"/><text x="159.296" y="438.093" fill="#000" font-size="14" textLength="110.585">QuestionOrderer</text><line x1="53" y1="449" x2="343.677" y2="449" style="stroke:#333;stroke-width:0.5;"/><text x="58" y="466.563" fill="#000" font-size="14" textLength="162.579">-strategy: OrderStrategy</text><line x1="53" y1="473.939" x2="343.677" y2="473.939" style="stroke:#333;stroke-width:0.5;"/><text x="58" y="491.502" fill="#000" font-size="14" textLength="189.369">+setStrategy(OrderStrategy)</text><text x="58" y="508.441" fill="#000" font-size="14" textLength="280.677">+arrange(List&lt;Question>): List&lt;Question></text></g><!--class OrderSelector--><g class="entity" data-qualified-name="OrderSelector" id="ent0013" data-source-line="50"><rect x="77" y="325" width="242.822" height="56.939" fill="#FFF" style="stroke:#333;stroke-width:0.5;" rx="2.5" ry="2.5"/><ellipse cx="147.701" cy="341" rx="11" ry="11" fill="#ADD1B2" style="stroke:#181818;stroke-width:1;"/><path d="M150.669,346.641 Q150.091,346.938 149.451,347.078 Q148.81,347.234 148.107,347.234 Q145.607,347.234 144.279,345.594 Q142.966,343.938 142.966,340.813 Q142.966,337.688 144.279,336.031 Q145.607,334.375 148.107,334.375 Q148.81,334.375 149.451,334.531 Q150.107,334.688 150.669,334.984 L150.669,337.703 Q150.044,337.125 149.451,336.859 Q148.857,336.578 148.232,336.578 Q146.888,336.578 146.201,337.656 Q145.513,338.719 145.513,340.813 Q145.513,342.906 146.201,343.984 Q146.888,345.047 148.232,345.047 Q148.857,345.047 149.451,344.781 Q150.044,344.5 150.669,343.922 L150.669,346.641 Z " fill="#000"/><text x="168.201" y="346.093" fill="#000" font-size="14" textLength="92.921">OrderSelector</text><line x1="78" y1="357" x2="318.822" y2="357" style="stroke:#333;stroke-width:0.5;"/><text x="83" y="374.563" fill="#000" font-size="14" textLength="230.822">+select(ExamType): OrderStrategy</text></g><!--class Question--><g class="entity" data-qualified-name="Question" id="ent0014" data-source-line="53"><rect x="865.5" y="456" width="94.045" height="83.338" fill="#FFF" style="stroke:#333;stroke-width:0.5;" rx="2.5" ry="2.5"/><ellipse cx="881.793" cy="476.729" rx="11" ry="11" fill="#ADD1B2" style="stroke:#181818;stroke-width:1;"/><path d="M884.762,482.37 Q884.183,482.667 883.543,482.808 Q882.902,482.964 882.199,482.964 Q879.699,482.964 878.371,481.323 Q877.058,479.667 877.058,476.542 Q877.058,473.417 878.371,471.761 Q879.699,470.104 882.199,470.104 Q882.902,470.104 883.543,470.261 Q884.199,470.417 884.762,470.714 L884.762,473.433 Q884.137,472.854 883.543,472.589 Q882.949,472.308 882.324,472.308 Q880.98,472.308 880.293,473.386 Q879.605,474.448 879.605,476.542 Q879.605,478.636 880.293,479.714 Q880.98,480.776 882.324,480.776 Q882.949,480.776 883.543,480.511 Q884.137,480.229 884.762,479.651 L884.762,482.37 Z " fill="#000"/><text x="899.987" y="472.625" fill="#000" font-size="12" textLength="51.357" font-style="italic">«record»</text><text x="896.08" y="489.082" fill="#000" font-size="14" textLength="59.172">Question</text><line x1="866.5" y1="497.459" x2="958.545" y2="497.459" style="stroke:#333;stroke-width:0.5;"/><text x="871.5" y="515.021" fill="#000" font-size="14" textLength="72.017">text: String</text><text x="871.5" y="531.961" fill="#000" font-size="14" textLength="82.045">difficulty: int</text></g><!--class NoiseSensor--><g class="entity" data-qualified-name="NoiseSensor" id="ent0015" data-source-line="58"><rect x="99" y="7" width="199.045" height="56.939" fill="#FFF" style="stroke:#333;stroke-width:0.5;" rx="2.5" ry="2.5"/><ellipse cx="152.194" cy="23" rx="11" ry="11" fill="#B4A7E5" style="stroke:#181818;stroke-width:1;"/><path d="M148.116,18.766 L148.116,16.609 L155.506,16.609 L155.506,18.766 L153.038,18.766 L153.038,26.844 L155.506,26.844 L155.506,29 L148.116,29 L148.116,26.844 L150.584,26.844 L150.584,18.766 L148.116,18.766 Z " fill="#000"/><text x="172.694" y="28.093" fill="#000" font-size="14" textLength="84.157" font-style="italic">NoiseSensor</text><line x1="100" y1="39" x2="297.045" y2="39" style="stroke:#333;stroke-width:0.5;"/><text x="105" y="56.563" fill="#000" font-size="14" textLength="187.045">+levelDb(roomId: String): int</text></g><!--class SimulatedNoiseSensor--><g class="entity" data-qualified-name="SimulatedNoiseSensor" id="ent0016" data-source-line="61"><rect x="544.5" y="19.5" width="181.837" height="32" fill="#FFF" style="stroke:#333;stroke-width:0.5;" rx="2.5" ry="2.5"/><ellipse cx="559.5" cy="35.5" rx="11" ry="11" fill="#ADD1B2" style="stroke:#181818;stroke-width:1;"/><path d="M562.469,41.141 Q561.891,41.438 561.25,41.578 Q560.609,41.734 559.906,41.734 Q557.406,41.734 556.078,40.094 Q554.766,38.438 554.766,35.313 Q554.766,32.188 556.078,30.531 Q557.406,28.875 559.906,28.875 Q560.609,28.875 561.25,29.031 Q561.906,29.188 562.469,29.484 L562.469,32.203 Q561.844,31.625 561.25,31.359 Q560.656,31.078 560.031,31.078 Q558.688,31.078 558,32.156 Q557.313,33.219 557.313,35.313 Q557.313,37.406 558,38.484 Q558.688,39.547 560.031,39.547 Q560.656,39.547 561.25,39.281 Q561.844,39 562.469,38.422 L562.469,41.141 Z " fill="#000"/><text x="573.5" y="40.593" fill="#000" font-size="14" textLength="149.837">SimulatedNoiseSensor</text></g><!--reverse link ReactStrategy to WarnStrategy--><g class="link" data-entity-1="ent0002" data-entity-2="ent0003" id="lnk17" data-source-line="63" data-link-type="extension"><path d="M756.51,171.5 C794.26,171.5 817.85,171.5 850.79,171.5" style="stroke:#333;stroke-width:1;stroke-dasharray:7,7;" fill="none" id="ReactStrategy-backto-WarnStrategy" codeLine="63"/><polygon points="738.51,171.5,756.51,177.5,756.51,165.5,738.51,171.5" fill="none" style="stroke:#333;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/></g><!--reverse link ReactStrategy to PauseStrategy--><g class="link" data-entity-1="ent0002" data-entity-2="ent0004" id="lnk18" data-source-line="64" data-link-type="extension"><path d="M755.998,200.612 C792.678,209.552 815.5,215.11 847.97,223.02" style="stroke:#333;stroke-width:1;stroke-dasharray:7,7;" fill="none" id="ReactStrategy-backto-PauseStrategy" codeLine="64"/><polygon points="738.51,196.35,754.577,206.442,757.419,194.783,738.51,196.35" fill="none" style="stroke:#333;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/></g><!--reverse link ReactStrategy to TerminateStrategy--><g class="link" data-entity-1="ent0002" data-entity-2="ent0005" id="lnk19" data-source-line="65" data-link-type="extension"><path d="M755.998,142.387 C791.768,133.667 813.49,128.38 845.52,120.58" style="stroke:#333;stroke-width:1;stroke-dasharray:7,7;" fill="none" id="ReactStrategy-backto-TerminateStrategy" codeLine="65"/><polygon points="738.51,146.65,757.419,148.216,754.577,136.558,738.51,146.65" fill="none" style="stroke:#333;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/></g><!--reverse link ViolationHandler to ReactStrategy--><g class="link" data-entity-1="ent0006" data-entity-2="ent0002" id="lnk20" data-source-line="66" data-link-type="aggregation"><path d="M319.013,154.822 C387.823,158.452 464.58,162.52 532.32,166.1" style="stroke:#333;stroke-width:1;" fill="none" id="ViolationHandler-backto-ReactStrategy" codeLine="66"/><polygon points="307.03,154.19,312.811,158.501,319.013,154.822,313.232,150.512,307.03,154.19" fill="none" style="stroke:#333;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/></g><!--link ReactSelector to ReactStrategy--><g class="link" data-entity-1="ent0007" data-entity-2="ent0002" id="lnk21" data-source-line="67" data-link-type="dependency"><path d="M337.44,232.96 C400.64,219.88 469.354,205.673 527.484,193.643" style="stroke:#333;stroke-width:1;stroke-dasharray:7,7;" fill="none" id="ReactSelector-to-ReactStrategy" codeLine="67"/><polygon points="532.38,192.63,522.756,190.537,527.484,193.643,524.377,198.371,532.38,192.63" fill="#333" style="stroke:#333;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/><text x="421" y="204.094" fill="#000" font-size="13" textLength="45.894">creates</text></g><!--link ReactSelector to ExamType--><g class="link" data-entity-1="ent0007" data-entity-2="ent0001" id="lnk22" data-source-line="68" data-link-type="dependency"><path d="M364.89,290.01 C442.96,303.48 525.623,317.731 579.193,326.961" style="stroke:#333;stroke-width:1;stroke-dasharray:7,7;" fill="none" id="ReactSelector-to-ExamType" codeLine="68"/><polygon points="584.12,327.81,575.93,322.34,579.193,326.961,574.572,330.224,584.12,327.81" fill="#333" style="stroke:#333;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/></g><!--reverse link OrderStrategy to InOrderStrategy--><g class="link" data-entity-1="ent0008" data-entity-2="ent0009" id="lnk23" data-source-line="70" data-link-type="extension"><path d="M701.696,485.147 C741.486,507.837 783.39,530.92 835,556.5 C847.37,562.63 861.09,568.9 873.46,574.35" style="stroke:#333;stroke-width:1;stroke-dasharray:7,7;" fill="none" id="OrderStrategy-backto-InOrderStrategy" codeLine="70"/><polygon points="686.06,476.23,698.724,490.359,704.669,479.934,686.06,476.23" fill="none" style="stroke:#333;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/></g><!--reverse link OrderStrategy to ShuffledStrategy--><g class="link" data-entity-1="ent0008" data-entity-2="ent0010" id="lnk24" data-source-line="71" data-link-type="extension"><path d="M742.267,412.731 C758.637,406.781 758.52,406.37 774,399.5 C804.7,385.88 837.78,367.95 863.8,353.03" style="stroke:#333;stroke-width:1;stroke-dasharray:7,7;" fill="none" id="OrderStrategy-backto-ShuffledStrategy" codeLine="71"/><polygon points="725.35,418.88,744.317,418.37,740.218,407.092,725.35,418.88" fill="none" style="stroke:#333;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/></g><!--reverse link OrderStrategy to EasyFirstStrategy--><g class="link" data-entity-1="ent0008" data-entity-2="ent0011" id="lnk25" data-source-line="72" data-link-type="extension"><path d="M792.184,423.158 C814.304,419.698 818.61,419.02 838.41,415.93" style="stroke:#333;stroke-width:1;stroke-dasharray:7,7;" fill="none" id="OrderStrategy-backto-EasyFirstStrategy" codeLine="72"/><polygon points="774.4,425.94,793.111,429.086,791.257,417.23,774.4,425.94" fill="none" style="stroke:#333;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/></g><!--reverse link QuestionOrderer to OrderStrategy--><g class="link" data-entity-1="ent0012" data-entity-2="ent0008" id="lnk26" data-source-line="73" data-link-type="aggregation"><path d="M357.249,459.608 C406.129,457.478 448.48,455.63 496.73,453.52" style="stroke:#333;stroke-width:1;" fill="none" id="QuestionOrderer-backto-OrderStrategy" codeLine="73"/><polygon points="345.26,460.13,351.428,463.865,357.249,459.608,351.08,455.873,345.26,460.13" fill="none" style="stroke:#333;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/></g><!--link OrderSelector to OrderStrategy--><g class="link" data-entity-1="ent0013" data-entity-2="ent0008" id="lnk27" data-source-line="74" data-link-type="dependency"><path d="M320.09,379.56 C376.79,391.81 439.653,405.394 497.713,417.944" style="stroke:#333;stroke-width:1;stroke-dasharray:7,7;" fill="none" id="OrderSelector-to-OrderStrategy" codeLine="74"/><polygon points="502.6,419,494.648,413.189,497.713,417.944,492.958,421.008,502.6,419" fill="#333" style="stroke:#333;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/><text x="421" y="399.094" fill="#000" font-size="13" textLength="45.894">creates</text></g><!--link OrderSelector to ExamType--><g class="link" data-entity-1="ent0013" data-entity-2="ent0001" id="lnk28" data-source-line="75" data-link-type="dependency"><path d="M320.09,348.79 C407.22,345.38 515.424,341.156 579.494,338.646" style="stroke:#333;stroke-width:1;stroke-dasharray:7,7;" fill="none" id="OrderSelector-to-ExamType" codeLine="75"/><polygon points="584.49,338.45,575.34,334.805,579.494,338.646,575.653,342.799,584.49,338.45" fill="#333" style="stroke:#333;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/></g><!--link OrderStrategy to Question--><g class="link" data-entity-1="ent0008" data-entity-2="ent0014" id="lnk29" data-source-line="76" data-link-type="dependency"><path d="M774.4,472.57 C807.24,478.54 835.12,483.617 860.4,488.207" style="stroke:#333;stroke-width:1;stroke-dasharray:7,7;" fill="none" id="OrderStrategy-to-Question" codeLine="76"/><polygon points="865.32,489.1,857.179,483.557,860.4,488.207,855.75,491.428,865.32,489.1" fill="#333" style="stroke:#333;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/></g><!--reverse link NoiseSensor to SimulatedNoiseSensor--><g class="link" data-entity-1="ent0015" data-entity-2="ent0016" id="lnk30" data-source-line="78" data-link-type="extension"><path d="M316.21,35.5 C390.16,35.5 472.53,35.5 544.33,35.5" style="stroke:#333;stroke-width:1;stroke-dasharray:7,7;" fill="none" id="NoiseSensor-backto-SimulatedNoiseSensor" codeLine="78"/><polygon points="298.21,35.5,316.21,41.5,316.21,29.5,298.21,35.5" fill="none" style="stroke:#333;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/></g><?plantuml-src ZLFVQzim47xNNo7eIyAMKDZB226GPGapbAnjsWtsfjZdM5IMmabkcctztoV9iMl97fjVRD-Fxxxxxau_SNbao4gg2vQf4vS7cZEXWUZMamgczT8OvFlAG98gkUC_WLvtGlOiVJgWgcIsKa8XFHNST26MYEfKkwu--2V6fxy8fPyYcAkDVvn7OGOO8hnsCBWqW3bBOHXd_N5plLd_5QVW6L0eZ-PCIoZtW9e8o0qrYY8_58Pc724rN4b2G5ObNR-myk5yhAjjaktonhvlxvUhXsJbojmz9ZyiBdcZTGyiDJk3pC3XxDFUeJEDKAaooMRK-gpuu-R3PjUwV6SecxoBwPPL6YBR0s39fRL4zczS2UQOVs4o4u2-z4HVWcOXByTAG_ix2fnZvoqyoZz9ruaWh6YgBcbntT_ekU6phPpGCpUvzwsUuvXGeE5NDxjGGp_EqGtNPdvNWNR02miI6bfQYGmWBjPTKUMvW2n0dg3jL9MMZt-t46kcpnkEsaGWJJ5Ve2zpM3UIEN1wcHdQyWVuxyPgX26zEyg675uZudG-jpjkzLmiF8215zFEbTeBo7EULiAS_SZ2mMmLjmi9KZV51Jo3-BplxqcTUj6TbvNT1SWwwOI4XpB_FPs69p3W3-zX8A1_7BspK9D9j7hX3a-dY-Y6PpIr5sn03qGsgXCIxgnd4s_XG4YyaaCn_KsCTz3rD5IgopG4Vkkf7zds5AOuLrEOaEucr9qC3FaF?></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 14.1.4 (20260321.0153)
+ -->
+<!-- Title: G Pages: 1 -->
+<svg width="913pt" height="664pt"
+ viewBox="0.00 0.00 913.00 664.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 660)">
+<title>G</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-660 909,-660 909,4 -4,4"/>
+<!-- ExamType -->
+<g id="node1" class="node">
+<title>ExamType</title>
+<polygon fill="white" stroke="black" points="520.12,-231.25 520.12,-279.75 660.12,-279.75 660.12,-231.25 520.12,-231.25"/>
+<text xml:space="preserve" text-anchor="middle" x="553.62" y="-258.55" font-family="Helvetica,sans-Serif" font-size="11.00">«enum»</text>
+<text xml:space="preserve" text-anchor="middle" x="553.62" y="-245.05" font-family="Helvetica,sans-Serif" font-size="11.00">ExamType</text>
+<polyline fill="none" stroke="black" points="587.12,-231.25 587.12,-279.75"/>
+<text xml:space="preserve" text-anchor="start" x="595.12" y="-265.3" font-family="Helvetica,sans-Serif" font-size="11.00">FINAL</text>
+<text xml:space="preserve" text-anchor="start" x="595.12" y="-251.8" font-family="Helvetica,sans-Serif" font-size="11.00">PRACTICE</text>
+<text xml:space="preserve" text-anchor="start" x="595.12" y="-238.3" font-family="Helvetica,sans-Serif" font-size="11.00">QUIZ</text>
+</g>
+<!-- ReactStrategy -->
+<g id="node2" class="node">
+<title>ReactStrategy</title>
+<polygon fill="#e8f0fe" stroke="black" points="469.12,-442.5 469.12,-478.5 711.12,-478.5 711.12,-442.5 469.12,-442.5"/>
+<text xml:space="preserve" text-anchor="middle" x="511.62" y="-463.55" font-family="Helvetica,sans-Serif" font-size="11.00">«interface»</text>
+<text xml:space="preserve" text-anchor="middle" x="511.62" y="-450.05" font-family="Helvetica,sans-Serif" font-size="11.00">ReactStrategy</text>
+<polyline fill="none" stroke="black" points="554.12,-442.5 554.12,-478.5"/>
+<text xml:space="preserve" text-anchor="start" x="562.12" y="-456.8" font-family="Helvetica,sans-Serif" font-size="11.00">+react(roomId: String): String</text>
+</g>
+<!-- WarnStrategy -->
+<g id="node3" class="node">
+<title>WarnStrategy</title>
+<polygon fill="white" stroke="black" points="111.5,-564.5 111.5,-600.5 289,-600.5 289,-564.5 111.5,-564.5"/>
+<text xml:space="preserve" text-anchor="middle" x="152.5" y="-579.05" font-family="Helvetica,sans-Serif" font-size="11.00">WarnStrategy</text>
+<polyline fill="none" stroke="black" points="193.5,-565 193.5,-600.5"/>
+<text xml:space="preserve" text-anchor="start" x="201.5" y="-579.05" font-family="Helvetica,sans-Serif" font-size="11.00">&#45;log: IncidentLog</text>
+</g>
+<!-- WarnStrategy&#45;&gt;ReactStrategy -->
+<g id="edge1" class="edge">
+<title>WarnStrategy&#45;&gt;ReactStrategy</title>
+<path fill="none" stroke="#333333" stroke-dasharray="5,2" d="M289.41,-576.89C324.54,-573.03 364.99,-566.51 400.5,-555.5 455.47,-538.46 513.95,-506.6 550.97,-484.5"/>
+<polygon fill="none" stroke="#333333" points="552.31,-487.77 559.06,-479.61 548.69,-481.78 552.31,-487.77"/>
+</g>
+<!-- IncidentLog -->
+<g id="node9" class="node">
+<title>IncidentLog</title>
+<polygon fill="white" stroke="black" points="490.88,-578.5 490.88,-614.5 689.38,-614.5 689.38,-578.5 490.88,-578.5"/>
+<text xml:space="preserve" text-anchor="middle" x="526.62" y="-592.8" font-family="Helvetica,sans-Serif" font-size="11.00">IncidentLog</text>
+<polyline fill="none" stroke="black" points="562.38,-578.5 562.38,-614.5"/>
+<text xml:space="preserve" text-anchor="start" x="570.38" y="-599.55" font-family="Helvetica,sans-Serif" font-size="11.00">+add(entry: String)</text>
+<text xml:space="preserve" text-anchor="start" x="570.38" y="-586.05" font-family="Helvetica,sans-Serif" font-size="11.00">+entries(): List&lt;String&gt;</text>
+</g>
+<!-- WarnStrategy&#45;&gt;IncidentLog -->
+<g id="edge14" class="edge">
+<title>WarnStrategy&#45;&gt;IncidentLog</title>
+<path fill="none" stroke="#333333" d="M289.26,-585.68C345.66,-587.71 419.28,-590.37 479.47,-592.54"/>
+<polygon fill="#333333" stroke="#333333" points="489.32,-592.9 479.17,-597.03 485.55,-592.76 479.33,-592.54 479.33,-592.54 479.33,-592.54 485.55,-592.76 479.49,-588.04 489.32,-592.9"/>
+</g>
+<!-- PauseStrategy -->
+<g id="node4" class="node">
+<title>PauseStrategy</title>
+<polygon fill="white" stroke="black" points="108.88,-497.25 108.88,-545.75 291.62,-545.75 291.62,-497.25 108.88,-497.25"/>
+<text xml:space="preserve" text-anchor="middle" x="152.5" y="-517.8" font-family="Helvetica,sans-Serif" font-size="11.00">PauseStrategy</text>
+<polyline fill="none" stroke="black" points="196.12,-497.25 196.12,-545.75"/>
+<text xml:space="preserve" text-anchor="start" x="204.12" y="-531.3" font-family="Helvetica,sans-Serif" font-size="11.00">&#45;log: IncidentLog</text>
+<text xml:space="preserve" text-anchor="start" x="204.12" y="-517.8" font-family="Helvetica,sans-Serif" font-size="11.00">&#45;clock: Clock</text>
+<text xml:space="preserve" text-anchor="start" x="204.12" y="-504.3" font-family="Helvetica,sans-Serif" font-size="11.00">&#45;seconds: int</text>
+</g>
+<!-- PauseStrategy&#45;&gt;ReactStrategy -->
+<g id="edge2" class="edge">
+<title>PauseStrategy&#45;&gt;ReactStrategy</title>
+<path fill="none" stroke="#333333" stroke-dasharray="5,2" d="M291.7,-507.28C341.86,-499.39 405.08,-489.44 460.32,-480.76"/>
+<polygon fill="none" stroke="#333333" points="460.79,-484.23 470.12,-479.22 459.7,-477.31 460.79,-484.23"/>
+</g>
+<!-- PauseStrategy&#45;&gt;IncidentLog -->
+<g id="edge15" class="edge">
+<title>PauseStrategy&#45;&gt;IncidentLog</title>
+<path fill="none" stroke="#333333" d="M291.67,-536.04C325.83,-541.77 365.02,-548.62 400.5,-555.5 432.14,-561.63 466.62,-568.95 497.35,-575.68"/>
+<polygon fill="#333333" stroke="#333333" points="506.86,-577.78 496.13,-580.02 503.17,-576.96 497.09,-575.63 497.09,-575.63 497.09,-575.63 503.17,-576.96 498.06,-571.23 506.86,-577.78"/>
+</g>
+<!-- TerminateStrategy -->
+<g id="node5" class="node">
+<title>TerminateStrategy</title>
+<polygon fill="white" stroke="black" points="100.62,-619.5 100.62,-655.5 299.88,-655.5 299.88,-619.5 100.62,-619.5"/>
+<text xml:space="preserve" text-anchor="middle" x="152.5" y="-634.05" font-family="Helvetica,sans-Serif" font-size="11.00">TerminateStrategy</text>
+<polyline fill="none" stroke="black" points="204.38,-620 204.38,-655.5"/>
+<text xml:space="preserve" text-anchor="start" x="212.38" y="-634.05" font-family="Helvetica,sans-Serif" font-size="11.00">&#45;log: IncidentLog</text>
+</g>
+<!-- TerminateStrategy&#45;&gt;ReactStrategy -->
+<g id="edge3" class="edge">
+<title>TerminateStrategy&#45;&gt;ReactStrategy</title>
+<path fill="none" stroke="#333333" stroke-dasharray="5,2" d="M300.32,-634.57C333.21,-630.88 369.36,-623.79 400.5,-610.5 435.69,-595.49 516.88,-525.36 560.38,-486.53"/>
+<polygon fill="none" stroke="#333333" points="562.56,-489.27 567.68,-479.99 557.89,-484.06 562.56,-489.27"/>
+</g>
+<!-- TerminateStrategy&#45;&gt;IncidentLog -->
+<g id="edge16" class="edge">
+<title>TerminateStrategy&#45;&gt;IncidentLog</title>
+<path fill="none" stroke="#333333" d="M300.13,-627.05C354.84,-621.26 422.96,-614.06 479.32,-608.11"/>
+<polygon fill="#333333" stroke="#333333" points="489.21,-607.06 479.74,-612.59 485.45,-607.46 479.27,-608.11 479.27,-608.11 479.27,-608.11 485.45,-607.46 478.8,-603.64 489.21,-607.06"/>
+</g>
+<!-- NoiseBasedReaction -->
+<g id="node6" class="node">
+<title>NoiseBasedReaction</title>
+<polygon fill="white" stroke="black" points="47.38,-442.5 47.38,-478.5 353.12,-478.5 353.12,-442.5 47.38,-442.5"/>
+<text xml:space="preserve" text-anchor="middle" x="106" y="-456.8" font-family="Helvetica,sans-Serif" font-size="11.00">NoiseBasedReaction</text>
+<polyline fill="none" stroke="black" points="164.62,-442.5 164.62,-478.5"/>
+<text xml:space="preserve" text-anchor="start" x="172.62" y="-463.55" font-family="Helvetica,sans-Serif" font-size="11.00">&#45;sensor: NoiseSensor</text>
+<text xml:space="preserve" text-anchor="start" x="172.62" y="-450.05" font-family="Helvetica,sans-Serif" font-size="11.00">&#45;quiet, medium, loud: ReactStrategy</text>
+</g>
+<!-- NoiseBasedReaction&#45;&gt;ReactStrategy -->
+<g id="edge4" class="edge">
+<title>NoiseBasedReaction&#45;&gt;ReactStrategy</title>
+<path fill="none" stroke="#333333" stroke-dasharray="5,2" d="M353.44,-453.89C387.85,-453.66 424.11,-453.72 457.6,-454.07"/>
+<polygon fill="none" stroke="#333333" points="457.28,-457.57 467.32,-454.18 457.37,-450.57 457.28,-457.57"/>
+</g>
+<!-- NoiseBasedReaction&#45;&gt;ReactStrategy -->
+<g id="edge10" class="edge">
+<title>NoiseBasedReaction&#45;&gt;ReactStrategy</title>
+<path fill="none" stroke="#333333" d="M353.44,-467.11C387.25,-467.34 422.85,-467.29 455.85,-466.95"/>
+<polygon fill="none" stroke="#333333" points="455.94,-466.95 461.89,-462.88 467.94,-466.81 461.98,-470.88 455.94,-466.95"/>
+</g>
+<!-- NoiseSensor -->
+<g id="node17" class="node">
+<title>NoiseSensor</title>
+<polygon fill="#e8f0fe" stroke="black" points="475.12,-334.5 475.12,-370.5 705.12,-370.5 705.12,-334.5 475.12,-334.5"/>
+<text xml:space="preserve" text-anchor="middle" x="514.25" y="-355.55" font-family="Helvetica,sans-Serif" font-size="11.00">«interface»</text>
+<text xml:space="preserve" text-anchor="middle" x="514.25" y="-342.05" font-family="Helvetica,sans-Serif" font-size="11.00">NoiseSensor</text>
+<polyline fill="none" stroke="black" points="553.38,-334.5 553.38,-370.5"/>
+<text xml:space="preserve" text-anchor="start" x="561.38" y="-348.8" font-family="Helvetica,sans-Serif" font-size="11.00">+levelDb(roomId: String): int</text>
+</g>
+<!-- NoiseBasedReaction&#45;&gt;NoiseSensor -->
+<g id="edge12" class="edge">
+<title>NoiseBasedReaction&#45;&gt;NoiseSensor</title>
+<path fill="none" stroke="#333333" d="M353.61,-444.2C369.57,-441.21 385.45,-437.67 400.5,-433.5 451.73,-419.31 507.31,-394.16 544.76,-375.63"/>
+<polygon fill="#333333" stroke="#333333" points="553.27,-371.38 546.33,-379.88 549.88,-373.07 544.32,-375.85 544.32,-375.85 544.32,-375.85 549.88,-373.07 542.31,-371.83 553.27,-371.38"/>
+</g>
+<!-- ViolationHandler -->
+<g id="node7" class="node">
+<title>ViolationHandler</title>
+<polygon fill="white" stroke="black" points="3.38,-387.5 3.38,-423.5 397.12,-423.5 397.12,-387.5 3.38,-387.5"/>
+<text xml:space="preserve" text-anchor="middle" x="51.12" y="-401.8" font-family="Helvetica,sans-Serif" font-size="11.00">ViolationHandler</text>
+<polyline fill="none" stroke="black" points="98.88,-387.5 98.88,-423.5"/>
+<text xml:space="preserve" text-anchor="start" x="106.88" y="-401.8" font-family="Helvetica,sans-Serif" font-size="11.00">&#45;strategy: ReactStrategy</text>
+<polyline fill="none" stroke="black" points="231.88,-387.5 231.88,-423.5"/>
+<text xml:space="preserve" text-anchor="start" x="239.88" y="-408.55" font-family="Helvetica,sans-Serif" font-size="11.00">+setStrategy(ReactStrategy)</text>
+<text xml:space="preserve" text-anchor="start" x="239.88" y="-395.05" font-family="Helvetica,sans-Serif" font-size="11.00">+handle(roomId: String): String</text>
+</g>
+<!-- ViolationHandler&#45;&gt;ReactStrategy -->
+<g id="edge9" class="edge">
+<title>ViolationHandler&#45;&gt;ReactStrategy</title>
+<path fill="none" stroke="#333333" d="M333.09,-423.98C355.58,-427.14 378.71,-430.41 400.5,-433.5 418.4,-436.04 437.25,-438.72 455.83,-441.38"/>
+<polygon fill="none" stroke="#333333" points="455.86,-441.38 462.37,-438.27 467.74,-443.08 461.24,-446.19 455.86,-441.38"/>
+</g>
+<!-- ReactSelector -->
+<g id="node8" class="node">
+<title>ReactSelector</title>
+<polygon fill="white" stroke="black" points="15.5,-275.5 15.5,-311.5 385,-311.5 385,-275.5 15.5,-275.5"/>
+<text xml:space="preserve" text-anchor="middle" x="57.62" y="-290.05" font-family="Helvetica,sans-Serif" font-size="11.00">ReactSelector</text>
+<polyline fill="none" stroke="black" points="99.75,-276 99.75,-311.5"/>
+<text xml:space="preserve" text-anchor="start" x="107.75" y="-290.05" font-family="Helvetica,sans-Serif" font-size="11.00">+select(violationNumber: int, ExamType): ReactStrategy</text>
+</g>
+<!-- ReactSelector&#45;&gt;ExamType -->
+<g id="edge18" class="edge">
+<title>ReactSelector&#45;&gt;ExamType</title>
+<path fill="none" stroke="#333333" stroke-dasharray="5,2" d="M385.25,-275.47C428.69,-271.22 472.79,-266.9 508.81,-263.37"/>
+<polygon fill="#333333" stroke="#333333" points="518.51,-262.42 509,-267.87 514.75,-262.79 508.56,-263.39 508.56,-263.39 508.56,-263.39 514.75,-262.79 508.12,-258.91 518.51,-262.42"/>
+</g>
+<!-- ReactSelector&#45;&gt;ReactStrategy -->
+<g id="edge17" class="edge">
+<title>ReactSelector&#45;&gt;ReactStrategy</title>
+<path fill="none" stroke="#333333" stroke-dasharray="5,2" d="M370.12,-311.95C380.59,-315.22 390.81,-319.04 400.5,-323.5 435.72,-339.69 435.53,-357.19 466.5,-380.5 493.12,-400.54 524.64,-421.03 549.05,-436.26"/>
+<polygon fill="#333333" stroke="#333333" points="557.33,-441.39 546.46,-439.95 554.12,-439.4 548.83,-436.13 548.83,-436.13 548.83,-436.13 554.12,-439.4 551.2,-432.3 557.33,-441.39"/>
+<text xml:space="preserve" text-anchor="middle" x="433.5" y="-365.37" font-family="Helvetica,sans-Serif" font-size="9.00">creates</text>
+</g>
+<!-- ReactSelector&#45;&gt;NoiseSensor -->
+<g id="edge13" class="edge">
+<title>ReactSelector&#45;&gt;NoiseSensor</title>
+<path fill="none" stroke="#333333" d="M385.49,-298.76C406.83,-300.9 428.21,-303.74 448.5,-307.5 476.29,-312.65 506.22,-321.71 531.3,-330.35"/>
+<polygon fill="#333333" stroke="#333333" points="540.58,-333.62 529.66,-334.55 537.02,-332.36 531.15,-330.3 531.15,-330.3 531.15,-330.3 537.02,-332.36 532.64,-326.06 540.58,-333.62"/>
+</g>
+<!-- ProctorStrategy -->
+<g id="node10" class="node">
+<title>ProctorStrategy</title>
+<polygon fill="#e8f0fe" stroke="black" points="466.5,-110.5 466.5,-146.5 713.75,-146.5 713.75,-110.5 466.5,-110.5"/>
+<text xml:space="preserve" text-anchor="middle" x="512.38" y="-131.55" font-family="Helvetica,sans-Serif" font-size="11.00">«interface»</text>
+<text xml:space="preserve" text-anchor="middle" x="512.38" y="-118.05" font-family="Helvetica,sans-Serif" font-size="11.00">ProctorStrategy</text>
+<polyline fill="none" stroke="black" points="558.25,-110.5 558.25,-146.5"/>
+<text xml:space="preserve" text-anchor="start" x="566.25" y="-124.8" font-family="Helvetica,sans-Serif" font-size="11.00">+pick(List&lt;Proctor&gt;): Proctor</text>
+</g>
+<!-- Proctor -->
+<g id="node16" class="node">
+<title>Proctor</title>
+<polygon fill="white" stroke="black" points="750.75,-104.25 750.75,-152.75 905,-152.75 905,-104.25 750.75,-104.25"/>
+<text xml:space="preserve" text-anchor="middle" x="780.12" y="-131.55" font-family="Helvetica,sans-Serif" font-size="11.00">«record»</text>
+<text xml:space="preserve" text-anchor="middle" x="780.12" y="-118.05" font-family="Helvetica,sans-Serif" font-size="11.00">Proctor</text>
+<polyline fill="none" stroke="black" points="809.5,-104.25 809.5,-152.75"/>
+<text xml:space="preserve" text-anchor="start" x="817.5" y="-138.3" font-family="Helvetica,sans-Serif" font-size="11.00">name: String</text>
+<text xml:space="preserve" text-anchor="start" x="817.5" y="-124.8" font-family="Helvetica,sans-Serif" font-size="11.00">activeRooms: int</text>
+<text xml:space="preserve" text-anchor="start" x="817.5" y="-111.3" font-family="Helvetica,sans-Serif" font-size="11.00">rating: double</text>
+</g>
+<!-- ProctorStrategy&#45;&gt;Proctor -->
+<g id="edge21" class="edge">
+<title>ProctorStrategy&#45;&gt;Proctor</title>
+<path fill="none" stroke="#333333" stroke-dasharray="5,2" d="M714.18,-128.5C722.62,-128.5 731.03,-128.5 739.23,-128.5"/>
+<polygon fill="#333333" stroke="#333333" points="749.04,-128.5 739.04,-133 745.26,-128.5 739.04,-128.5 739.04,-128.5 739.04,-128.5 745.26,-128.5 739.04,-124 749.04,-128.5"/>
+</g>
+<!-- LeastLoadedStrategy -->
+<g id="node11" class="node">
+<title>LeastLoadedStrategy</title>
+<polygon fill="white" stroke="black" points="140.88,-55.5 140.88,-91.5 259.62,-91.5 259.62,-55.5 140.88,-55.5"/>
+<text xml:space="preserve" text-anchor="middle" x="200.25" y="-70.05" font-family="Helvetica,sans-Serif" font-size="11.00">LeastLoadedStrategy</text>
+</g>
+<!-- LeastLoadedStrategy&#45;&gt;ProctorStrategy -->
+<g id="edge5" class="edge">
+<title>LeastLoadedStrategy&#45;&gt;ProctorStrategy</title>
+<path fill="none" stroke="#333333" stroke-dasharray="5,2" d="M259.69,-81.22C299.42,-86.52 353.15,-93.78 400.5,-100.5 418.08,-103 436.56,-105.67 454.81,-108.35"/>
+<polygon fill="none" stroke="#333333" points="454.23,-111.8 464.63,-109.79 455.25,-104.88 454.23,-111.8"/>
+</g>
+<!-- BestRatedStrategy -->
+<g id="node12" class="node">
+<title>BestRatedStrategy</title>
+<polygon fill="white" stroke="black" points="146.5,-0.5 146.5,-36.5 254,-36.5 254,-0.5 146.5,-0.5"/>
+<text xml:space="preserve" text-anchor="middle" x="200.25" y="-15.05" font-family="Helvetica,sans-Serif" font-size="11.00">BestRatedStrategy</text>
+</g>
+<!-- BestRatedStrategy&#45;&gt;ProctorStrategy -->
+<g id="edge6" class="edge">
+<title>BestRatedStrategy&#45;&gt;ProctorStrategy</title>
+<path fill="none" stroke="#333333" stroke-dasharray="5,2" d="M254.09,-21.62C294.72,-24.98 351.95,-31.82 400.5,-45.5 451.97,-60 507.63,-85.86 545.04,-104.87"/>
+<polygon fill="none" stroke="#333333" points="543.25,-107.88 553.75,-109.34 546.45,-101.66 543.25,-107.88"/>
+</g>
+<!-- RoundRobinStrategy -->
+<g id="node13" class="node">
+<title>RoundRobinStrategy</title>
+<polygon fill="white" stroke="black" points="113,-110.5 113,-146.5 287.5,-146.5 287.5,-110.5 113,-110.5"/>
+<text xml:space="preserve" text-anchor="middle" x="171.62" y="-125.05" font-family="Helvetica,sans-Serif" font-size="11.00">RoundRobinStrategy</text>
+<polyline fill="none" stroke="black" points="230.25,-111 230.25,-146.5"/>
+<text xml:space="preserve" text-anchor="start" x="238.25" y="-125.05" font-family="Helvetica,sans-Serif" font-size="11.00">&#45;next: int</text>
+</g>
+<!-- RoundRobinStrategy&#45;&gt;ProctorStrategy -->
+<g id="edge7" class="edge">
+<title>RoundRobinStrategy&#45;&gt;ProctorStrategy</title>
+<path fill="none" stroke="#333333" stroke-dasharray="5,2" d="M287.81,-128.5C336.9,-128.5 399.39,-128.5 454.72,-128.5"/>
+<polygon fill="none" stroke="#333333" points="454.53,-132 464.53,-128.5 454.53,-125 454.53,-132"/>
+</g>
+<!-- ProctorAssigner -->
+<g id="node14" class="node">
+<title>ProctorAssigner</title>
+<polygon fill="white" stroke="black" points="0,-165.5 0,-201.5 400.5,-201.5 400.5,-165.5 0,-165.5"/>
+<text xml:space="preserve" text-anchor="middle" x="46.62" y="-179.8" font-family="Helvetica,sans-Serif" font-size="11.00">ProctorAssigner</text>
+<polyline fill="none" stroke="black" points="93.25,-165.5 93.25,-201.5"/>
+<text xml:space="preserve" text-anchor="start" x="101.25" y="-179.8" font-family="Helvetica,sans-Serif" font-size="11.00">&#45;strategy: ProctorStrategy</text>
+<polyline fill="none" stroke="black" points="233,-165.5 233,-201.5"/>
+<text xml:space="preserve" text-anchor="start" x="241" y="-186.55" font-family="Helvetica,sans-Serif" font-size="11.00">+setStrategy(ProctorStrategy)</text>
+<text xml:space="preserve" text-anchor="start" x="241" y="-173.05" font-family="Helvetica,sans-Serif" font-size="11.00">+assign(List&lt;Proctor&gt;): Proctor</text>
+</g>
+<!-- ProctorAssigner&#45;&gt;ProctorStrategy -->
+<g id="edge11" class="edge">
+<title>ProctorAssigner&#45;&gt;ProctorStrategy</title>
+<path fill="none" stroke="#333333" d="M339.28,-165.03C359.81,-162.21 380.71,-159.31 400.5,-156.5 417.58,-154.08 435.52,-151.48 453.26,-148.88"/>
+<polygon fill="none" stroke="#333333" points="453.37,-148.86 458.72,-144.03 465.24,-147.12 459.89,-151.95 453.37,-148.86"/>
+</g>
+<!-- ProctorSelector -->
+<g id="node15" class="node">
+<title>ProctorSelector</title>
+<polygon fill="white" stroke="black" points="27.5,-220.5 27.5,-256.5 373,-256.5 373,-220.5 27.5,-220.5"/>
+<text xml:space="preserve" text-anchor="middle" x="73" y="-235.05" font-family="Helvetica,sans-Serif" font-size="11.00">ProctorSelector</text>
+<polyline fill="none" stroke="black" points="118.5,-221 118.5,-256.5"/>
+<text xml:space="preserve" text-anchor="start" x="126.5" y="-235.05" font-family="Helvetica,sans-Serif" font-size="11.00">+select(ExamType, students: int): ProctorStrategy</text>
+</g>
+<!-- ProctorSelector&#45;&gt;ExamType -->
+<g id="edge20" class="edge">
+<title>ProctorSelector&#45;&gt;ExamType</title>
+<path fill="none" stroke="#333333" stroke-dasharray="5,2" d="M373.35,-246.04C420.45,-248.11 469.28,-250.25 508.56,-251.97"/>
+<polygon fill="#333333" stroke="#333333" points="518.42,-252.4 508.23,-256.46 514.64,-252.24 508.43,-251.96 508.43,-251.96 508.43,-251.96 514.64,-252.24 508.62,-247.47 518.42,-252.4"/>
+</g>
+<!-- ProctorSelector&#45;&gt;ProctorStrategy -->
+<g id="edge19" class="edge">
+<title>ProctorSelector&#45;&gt;ProctorStrategy</title>
+<path fill="none" stroke="#333333" stroke-dasharray="5,2" d="M365.38,-220.01C377.35,-217.52 389.16,-214.69 400.5,-211.5 452.19,-196.94 508.1,-170.92 545.52,-151.89"/>
+<polygon fill="#333333" stroke="#333333" points="554.01,-147.52 547.18,-156.1 550.65,-149.25 545.12,-152.1 545.12,-152.1 545.12,-152.1 550.65,-149.25 543.06,-148.09 554.01,-147.52"/>
+<text xml:space="preserve" text-anchor="middle" x="433.5" y="-206.9" font-family="Helvetica,sans-Serif" font-size="9.00">creates</text>
+</g>
+<!-- SimulatedNoiseSensor -->
+<g id="node18" class="node">
+<title>SimulatedNoiseSensor</title>
+<polygon fill="white" stroke="black" points="137.12,-332.5 137.12,-368.5 263.38,-368.5 263.38,-332.5 137.12,-332.5"/>
+<text xml:space="preserve" text-anchor="middle" x="200.25" y="-347.05" font-family="Helvetica,sans-Serif" font-size="11.00">SimulatedNoiseSensor</text>
+</g>
+<!-- SimulatedNoiseSensor&#45;&gt;NoiseSensor -->
+<g id="edge8" class="edge">
+<title>SimulatedNoiseSensor&#45;&gt;NoiseSensor</title>
+<path fill="none" stroke="#333333" stroke-dasharray="5,2" d="M263.57,-350.82C317.32,-351.1 396.6,-351.51 463.47,-351.85"/>
+<polygon fill="none" stroke="#333333" points="463.41,-355.35 473.43,-351.9 463.44,-348.35 463.41,-355.35"/>
+</g>
+</g>
+</svg>

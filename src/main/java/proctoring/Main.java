@@ -9,7 +9,8 @@ import proctoring.sensor.SimulatedNoiseSensor;
 
 public class Main {
   public static void main(String[] args) {
-    ReactSelector reactSelector = new ReactSelector(new IncidentLog(), Clock.systemUTC());
+    ReactSelector reactSelector = new ReactSelector(new IncidentLog(), Clock.systemUTC(),
+        new SimulatedNoiseSensor());
     ViolationHandler handler = new ViolationHandler(new WarnStrategy(new IncidentLog()));
     for (ExamType type : ExamType.values()) {
       System.out.println(type);
